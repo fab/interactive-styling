@@ -5,6 +5,24 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
   </head>
   <body>
-
+    <h1>Interactive Styling</h1>
+    <div ng-app>
+      <div>
+        Type a word or phrase here:
+        <input type="text" ng-model="data.message">
+      </div>
+      <div>
+        Choose a text color:
+        <input type="text" ng-model="data.color">
+      </div>
+      <div>
+        Choose a background color:
+        <input type="text" ng-model="data.background">
+      </div>
+      Result:
+      <div id="output" ng-style="{color: data.color, background: data.background}">
+        {{data.message}}
+      </div>
+    </div>
   </body>
 </html>
