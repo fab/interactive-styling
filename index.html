@@ -23,8 +23,12 @@
         Choose a font size:
         <input type="text" ng-model="data.fontSize">
       </div>
+      <div>
+        Choose an animation:
+        <input type="text" ng-model="data.animation">
+      </div>
       Result:
-      <div id="output" ng-style="{color: data.color, background: data.background, fontSize: data.fontSize + 'px'}">
+      <div id="output" class="{{data.animation}}" ng-style="{color: data.color, background: data.background, fontSize: data.fontSize + 'px'}">
         {{data.message}}
       </div>
     </div>
