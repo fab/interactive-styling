@@ -14,11 +14,40 @@
       </div>
       <div>
         Choose a text color:
-        <input type="text" ng-model="data.color">
+        <select ng-model="data.color">
+          <option value="black">Black</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+          <option value="lime">Lime</option>
+          <option value="aqua">Aqua</option>
+          <option value="fuchsia">Fuchsia</option>
+          <option value="white">White</option>
+          <option value="silver">Silver</option>
+          <option value="grey">Grey</option>
+          <option value="maroon">Maroon</option>
+        </select>
       </div>
       <div>
         Choose a background color:
-        <input type="text" ng-model="data.background">
+        <select ng-model="data.background">
+          <option value="none">None</option>
+          <option value="black">Black</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+          <option value="lime">Lime</option>
+          <option value="aqua">Aqua</option>
+          <option value="fuchsia">Fuchsia</option>
+          <option value="white">White</option>
+          <option value="silver">Silver</option>
+          <option value="grey">Grey</option>
+          <option value="maroon">Maroon</option>
+        </select>
       </div>
       <div>
         Choose a font size:
@@ -26,7 +55,10 @@
       </div>
       <div>
         Choose an animation:
-        <input type="text" ng-model="data.animation">
+        <select ng-model="data.animation">
+          <option value="none">None</option>
+          <option value="rotate">Rotate</option>
+        </select>
       </div>
       <h2>Result:</h2>
       <div id="output" class="{{data.animation}}" ng-style="{color: data.color, background: data.background, fontSize: data.fontSize + 'px'}">
