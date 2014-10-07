@@ -56,16 +56,26 @@
         <div>
           Choose a font:
           <select ng-model="data.fontFamily">
-            <option value="times">Times New Roman</option>
-            <option value="helvetica">Helvetica</option>
-            <option value="verdana">Verdana</option>
-            <option value="georgia">Georgia</option>
-            <option value="palatino">Palatino</option>
-            <option value="courier">Courier</option>
-            <option value="comic sans ms">Comic Sans</option>
-            <option value="impact">Impact</option>
-            <option value="cursive">Cursive</option>
-            <option value="papyrus">Papyrus</option>
+            <optgroup label="Serif">
+              <option value="times">Times New Roman</option>
+              <option value="palatino">Palatino</option>
+              <option value="georgia">Georgia</option>
+            </optgroup>
+            <optgroup label="Sans-Serif">
+              <option value="helvetica">Helvetica</option>
+              <option value="verdana">Verdana</option>
+              <option value="impact">Impact</option>
+            </optgroup>
+            <optgroup label="Monospaced">
+              <option value="courier">Courier</option>
+            </optgroup>
+            <optgroup label="Fantasy">
+              <option value="papyrus">Papyrus</option>
+            </optgroup>
+            <optgroup label="Cursive">
+              <option value="cursive">Cursive</option>
+              <option value="comic sans ms">Comic Sans</option>
+            </optgroup>
           </select>
         </div>
         <div>
