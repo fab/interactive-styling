@@ -54,6 +54,16 @@
           </select>
         </div>
         <div>
+          Choose a font:
+          <select ng-model="data.fontFamily">
+            <option value="serif">Serif</option>
+            <option value="sans-serif">Sans-Serif</option>
+            <option value="monospace">Monospace</option>
+            <option value="cursive">Cursive</option>
+            <option value="fantasy">Fantasy</option>
+          </select>
+        </div>
+        <div>
           Choose a font size:
           <input type="number" step="10" ng-model="data.fontSize">
         </div>
@@ -65,7 +75,7 @@
           </select>
         </div>
         <h2>Result:</h2>
-        <div id="output" class="{{data.animation}}" ng-style="{color: data.color, background: data.background, fontSize: data.fontSize + 'px'}">
+        <div id="output" class="{{data.animation}}" ng-style="{color: data.color, background: data.background, fontFamily: data.fontFamily, fontSize: data.fontSize + 'px'}">
           {{data.message}}
         </div>
       </div>
